@@ -1,0 +1,366 @@
+chapter 1	1	两手空空	liǎng shǒu kōngkōng	手里没有什么东西。	empty-handed
+chapter 1	2	蒸蒸日上	zhēngzhēng rì shàng	比喻事业一天天向上发展。	thriving; flourishing
+chapter 1	3	价位	jiàwèi	（名）一般指商品和服务价格所处的档次，分高、中、低三档划分等级。	price level; tier
+chapter 1	4	适中	shìzhōng	（形）合适，此处指不太贵也不太便宜：价格～。	moderate; just right
+chapter 1	5	派头	pàitóu	（名）气派：有～｜～十足。	style; air of importance
+chapter 1	6	高档	gāodàng	（形）高级档次的（商品、服务等）。一般质量好，价钱贵：～住宅｜～服装。	high-end; upscale
+chapter 1	7	露天	lùtiān	（名）指在房屋外，没有遮挡：～影院｜～茶座。	open-air; outdoor
+chapter 1	8	风吹日晒	fēngchuī rìshài	寒风吹，烈日晒。	exposed to wind and sun
+chapter 1	9	车位	chēwèi	（名）停车的位置。	parking space
+chapter 1	10	代步工具	dàibù gōngjù	代替走路的交通工具。	means of conveyance
+chapter 1	11	中档	zhōngdàng	（形）中等档次的（商品、服务等）。	mid-range
+chapter 1	12	实惠	shíhuì	（形）有实际的好处。	good value; practical benefit
+chapter 1	13	固定资产	gùdìng zīchǎn	不变动、不移动的资产。	fixed assets
+chapter 1	14	客户	kèhù	（名）顾客，客商。customer	customer; client
+chapter 1	15	实力	shílì	（名）实在的力量：～雄厚｜～演员｜有～。	strength; capability
+chapter 1	16	贷款	dàikuǎn	（动）to loan; 银行～｜低息～。	loan; to lend
+chapter 1	17	包装	bāozhuāng	（动）原指商品的包装，此处指人打扮自己。	packaging; (fig.) to dress up
+chapter 1	18	合身	héshēn	（形）（衣服等）穿在身上很合适。	to fit (clothes)
+chapter 1	19	量身定做	liáng shēn dìng zuò	根据身体的尺寸特制做的。	custom-made; tailored
+chapter 1	20	质地	zhìdì	（名）某种材料的性质：～讲究。	texture; quality of material
+chapter 1	21	手感	shǒugǎn	（名）手摸上去的感觉。	feel (to the touch)
+chapter 1	22	做工	zuògōng	（名）指制作的技术和质量。	workmanship
+chapter 1	23	赠品	zèngpǐn	赠送的物品。	free gift
+chapter 1	24	情结	qíngjié	（名）深藏心底的感情：恋父～。	complex (emotional)
+chapter 1	25	信誉	xìnyù	（名）信用和名誉。	reputation; credibility
+chapter 1	26	代名词	dàimíngcí	（名）替代某种事物、词语或说法的词语。	synonym; byword
+chapter 1	27	钟有独钟	qíng yǒu dú zhōng	对某事或事物有特别喜爱的感情。	to have a special fondness for
+chapter 1	28	庄重	zhuāngzhòng	（形）严肃、稳重、不随便。	solemn; dignified
+chapter 1	29	一概	yīgài	（副）全部如此，没有例外。	without exception; all
+chapter 1	30	大款	dàkuǎn	（名）拥有较多钱财的人。	tycoon; rich person
+chapter 1	31	崇拜	chóngbài	（动）崇敬、敬佩：对名人十分～。	to admire; to worship
+chapter 1	32	攀比	pānbǐ	（动）多指在物质方面跟别人比较。	to keep up with the Joneses
+chapter 1	33	一掷千金	yí zhì qiān jīn	形容挥霍无度，花钱数目很大。	to throw money around
+chapter 1	34	身份	shēnfèn	（名）指人的社会地位。	identity; status
+chapter 1	35	陷入	xiànrù	（动）落入或处于不利的境地。	to sink into; to get caught in
+chapter 1	36	怪圈	guàiquān	（名）比喻难以摆脱的某种现象。	vicious cycle
+chapter 1	37	图	tú	（动）为了，贪图：～方便。	to seek; to covet
+chapter 1	38	精品	jīngpǐn	（名）精良的物品：～店。	quality goods
+chapter 1	39	装修	zhuāngxiū	（动）对房屋居室的装潢和装饰。	to decorate; renovation
+chapter 1	40	门可罗雀	mén kě luó què	大门前可以张网罗雀，比喻门庭冷落。形容十分冷清、宾客稀少。	deserted; no customers
+chapter 1	41	亏损	kuīsǔn	（动）（多指经营）支出超过收入。	loss; deficit
+chapter 2	1	招聘	zhāopìn	（动）用公开招的方式招人：～单位｜～志愿者。	to recruit
+chapter 2	2	天生	tiānshēng	（形）天然生成的：～英才｜～的才能。	innate; inborn
+chapter 2	3	公务员	gōngwùyuán	（名）政府机关的工作人员。	civil servant
+chapter 2	4	科室	kēshì	（名）管理部门中的各科、室的总称。	department; office
+chapter 2	5	纸上谈兵	zhǐ shàng tán bīng	比喻不联系实际情况，空发议论。	armchair strategy; paper talk
+chapter 2	6	凭	píng	（介）根据，靠：～本事｜～能力｜～什么。	by; on the basis of
+chapter 2	7	成年累月	chéngnián lěi yuè	整年、很多月。形容时间长。	year in year out
+chapter 2	8	操持	cāochí	（动）料理、处理：～家务。	to manage; to run (household)
+chapter 2	9	格局	géjú	（名）结构和形式。	structure; layout
+chapter 2	10	风险	fēngxiǎn	（名）可能发生的危险：高～｜降低～。	risk
+chapter 2	11	福气	fúqì	（名）享受幸福生活的命运：有～｜好～。	good fortune
+chapter 2	12	见缝插针	jiàn fèng chā zhēn	比喻利用一切可以利用的时间和空间。	to seize every opportunity
+chapter 2	13	憧憬	chōngjǐng	（动）一心期望，盼望：～未来｜～社会。	to look forward to; to long for
+chapter 2	14	婆婆妈妈	pópo māma	（形）形容说话唠叨或办事拖沓。	fussy; long-winded
+chapter 2	15	深沉	shēnchén	（形）沉着持重，思想感情有深度。	deep; profound
+chapter 2	16	实力	shílì	（名）实在的力量或能力。	strength; capability
+chapter 2	17	雄厚	xiónghòu	（形）（人力、物力等）充足：～的资金｜～实力。	abundant; substantial
+chapter 2	18	千载难逢	qiān zǎi nán féng	一千年也难得遇到一次。形容机会极其难得。	once in a blue moon
+chapter 2	19	简历	jiǎnlì	（名）简明扼要的履历。resume	resume; CV
+chapter 2	20	硕士	shuòshì	（名）学位的一种。master	master's degree
+chapter 2	21	干部	gànbù	（名）担任一定的领导或管理工作的人员。	cadre; official
+chapter 2	22	秩序	chéngxù	（名）事情进行的先后次序。	order; sequence
+chapter 2	23	公益	gōngyì	（名）公共的利益多指卫生、救济等福利事业。	public welfare
+chapter 2	24	多才多艺	duō cái duō yì	具有多方面的才能、技艺。	versatile; talented
+chapter 2	25	家常便饭	jiācháng biànfàn	家庭日常的饭食，比喻经常发生的事，已习以为常。	commonplace; routine
+chapter 2	26	前景	qiánjǐng	（名）将来的景象和情况：广阔的～｜～光明。	prospects; outlook
+chapter 2	27	渗透	shèntòu	（动）逐渐进入，扩展到：～到…中。	to permeate; to seep
+chapter 2	28	民营	mínyíng	（形）私人或集体经营的：～企业。	privately run
+chapter 2	29	薪酬	xīnchóu	（名）报酬，工资。	salary; compensation
+chapter 2	30	运作	yùnzuò	（动）进行工作，开展活动。	to operate; to run
+chapter 2	31	规范	guīfàn	（形）合乎规定或标准。	standard; normative
+chapter 2	32	营销	yíngxiāo	（动）经营，销售。	marketing
+chapter 2	33	提升	tíshēng	（动）（向上）提高，升格：～产品质量。	to promote; to upgrade
+chapter 2	34	创业	chuàngyè	（动）创办事业。	to start a business
+chapter 2	35	白手起家	báishǒu qǐjiā	形容原来没有基础而创立起一番事业。	to start from scratch
+chapter 2	36	并非	bìngfēi	（动）并不是。	not; by no means
+chapter 2	37	轻而易举	qīng ér yì jǔ	形容事情做起来很容易。	easy; effortless
+chapter 2	38	立足	lìzú	（动）站稳脚跟，能生存下去或生存下去。	to gain a foothold
+chapter 2	39	美梦成真	měi mèng chéng zhēn	美好的幻想得以实现。	dreams come true
+chapter 2	40	金融	jīnróng	（名）finance; banking	finance; banking
+chapter 2	41	采访	cǎifǎng	（动）搜集采访；to interview	to interview; to cover
+chapter 3	1	散养	sànyǎng	（动）分散饲养或放养（禽、畜等）：～鸡。	free-range; to pasture
+chapter 3	2	外卖	wàimài	（名）指饭店送的食物：点～｜送～。	takeout; delivery food
+chapter 3	3	后盾	hòudùn	（名）身后的盾，比喻背后支持和援助的力量：有～。	backing; support
+chapter 3	4	公认	gōngrèn	（动）公认为，大家一致认为：被～为……。	to be widely recognized
+chapter 3	5	后顾之忧	hòu gù zhī yōu	指后方或家里令人牵挂的忧虑之事。	worries about the rear; family concerns
+chapter 3	6	名副其实	míng fú qí shí	名称或名声与实际情况相符合。	to live up to one's name
+chapter 3	7	咽炎	yānyán	（名）喉咙部位发炎的一种病症。pharyngitis	pharyngitis
+chapter 3	8	急性肺炎	jíxìng fèiyán	急性发作的肺部炎症。acute pneumonia	acute pneumonia
+chapter 3	9	打点滴	dǎ diǎndī	（动）打静脉点滴。IV drip	IV drip; to get an IV
+chapter 3	10	通	tòng	（量）用于动作，相当于“顿”“阵”等：笑一～。	measure word (for bouts, spells)
+chapter 3	11	安顿	āndùn	（动）对人或事物进行适当的安排，使稳定下来：～下来｜～好。	to settle; to arrange
+chapter 3	12	没精打采	méi jīng dǎ cǎi	形容精神低落，没有精神。	listless; down in the dumps
+chapter 3	13	体贴	tǐtiē	（动）体察别人的心情和处境，给予同情和照顾：～他人。	considerate; thoughtful
+chapter 3	14	雄心大志	xióngxīn dà zhì	远大的抱负和志向。	great ambition
+chapter 3	15	年轻力壮	niánqīng lì zhuàng	年纪不大，体力强壮。	young and strong
+chapter 3	16	一天到晚	yì tiān dào wǎn	整天，成天。	all day long
+chapter 3	17	贤妻良母	xián qī liáng mǔ	既是丈夫贤惠的妻子，又是子女慈爱的母亲。	virtuous wife and mother
+chapter 3	18	型	xíng	（名）种类，type, pattern：新款是修身～。	type; style
+chapter 3	19	团团转	túntúnzhuàn	（动）来回转圈，多用来形容忙碌、焦急的样子：急得～。	to run around in circles
+chapter 3	20	分担	fēndān	（动）担负一部分：～家务｜～工作｜～费用｜～悲伤。	to share (burden, cost)
+chapter 3	21	节奏	jiézòu	（名）均匀的、有规律的活动进程；tempo：～快｜～欢快。	rhythm; tempo
+chapter 3	22	沟通	gōutōng	（动）使彼此通达：～思想｜～感情。	to communicate
+chapter 3	23	高见	gāojiàn	（名）敬辞，用于称对方的见解：你有什么～？说说你的～。	your esteemed opinion
+chapter 3	24	专利	zhuānlì	（名）课文中指某件事情只有某人享有：这件事是他的～。	patent; monopoly (on something)
+chapter 3	25	擅长	shàncháng	（动）在某方面有专长：～做家务｜～运动。	to be good at
+chapter 3	26	泡	pào	（动）较长时间待在某处，故意消磨时间：～吧｜～酒吧。	to hang out; to kill time
+chapter 3	27	事业有成	shìyè yǒu chéng	多指职业做出成绩，取得成功。	to have a successful career
+chapter 3	28	主心骨	zhǔxīngǔ	（名）可以依靠的核心力量。	backbone; pillar
+chapter 3	29	顺心	shùnxīn	（形）合乎心意。	satisfying; going one's way
+chapter 3	30	唠叨	láodao	（动）说起来没完没了：爱～｜别～｜～穷啊。	to nag; to chatter
+chapter 3	31	宽心	kuānxīn	（动）解除心中的焦急忧虑：给朋友一个～丸。	to set someone's mind at ease
+chapter 3	32	长处	chángchù	（名）特长，优点。	strong point; merit
+chapter 3	33	眉开眼笑	méi kāi yǎn xiào	形容高兴的样子。	all smiles; beaming
+chapter 3	34	相夫教子	xiàng fū jiào zǐ	指女性在家里辅助丈夫、教导孩子。	to support husband and raise children
+chapter 3	35	家政	jiāzhèng	（名）家庭管理工作：～公司｜～服务员。	housekeeping; domestic service
+chapter 3	36	善待	shàndài	（动）很好地对待：他一人～一家子｜～动物。	to treat well
+chapter 3	37	滋味	zīwèi	（名）味道，比喻某种感受：苦～｜甜～；flavour。	taste; flavor; feeling
+chapter 3	38	温馨	wēnxīn	（形）温和芳香；温暖的：～的家庭气氛｜～的笑容。	warm and cozy
+chapter 3	39	系	xì	（动）打结，扣，to tie; to fasten; to do up：～带子｜～扣子｜～上围巾。	to tie; to fasten
+chapter 4	1	对口	duìkǒu	（形）互相关联的两方面在工作内容和性质上一致：专业～｜～麦类。	to match; to correspond (e.g. major to job)
+chapter 4	2	学以致用	xué yǐ zhì yòng	学习的知识要能应用到实际中。	to apply what one learns
+chapter 4	3	刷	shuā	（动）比喻除掉：～卡｜～一下。	to swipe; to brush
+chapter 4	4	质问	zhìwèn	（动）责问，依据事实问明是非：一般事情比较严重时才～。	to question; to challenge
+chapter 4	5	冤	yuān	（形）冤枉，委屈；grievance; be wronged：被～｜～得很。	wronged; unjust
+chapter 4	6	岂有此理	qǐ yǒu cǐ lǐ	哪有这个道理。指别人的言行或某一事物极其荒谬。	outrageous; preposterous
+chapter 4	7	找碴	zhǎo chá	（动）不平等地对待，特意～｜挑剔。	to find fault; to pick a quarrel
+chapter 4	8	容貌	róngmào	（名）相貌，～英俊｜～姣好。	appearance; looks
+chapter 4	9	振振有词	zhènzhèn yǒu cí	理由气壮的样子。形容自以为理由很充分，说个不停。	to speak with an air of conviction
+chapter 4	10	貌若天仙	mào ruò tiānxiān	相貌像天仙一样。形容非常漂亮。	as beautiful as a fairy
+chapter 4	11	发誓	fāshì	（动）to swear and make a pledge：对天～｜向……～。	to swear; to vow
+chapter 4	12	宪法	xiànfǎ	（名）国家的根本大法。constitution	constitution
+chapter 4	13	案	àn	（名）事件，特指涉及法律问题的事件：刑事～｜民事～。	case; lawsuit
+chapter 4	14	官司	guānsi	（名）指诉讼。lawsuit：打～｜输了～。	lawsuit
+chapter 4	15	原告	yuángào	（名）向法院提出诉讼的一方。plaintiff, prosecutor.	plaintiff
+chapter 4	16	应聘	yìngpìn	（动）求职的人参加招聘活动。	to apply for a job
+chapter 4	17	触动	chùdòng	（动）因某种刺激而引起（感情变化或回忆）。	to touch; to stir
+chapter 4	18	公平	gōngpíng	（形）处理事情合理，不偏向一方。	fair; impartial
+chapter 4	19	趋势	qūshì	（名）事物发展的方向：流行～｜发展～。	trend
+chapter 4	20	诉讼	sùsòng	（动）打官司。to lawsuit; 提起～｜赢得～。	to sue; litigation
+chapter 4	21	代理人	dàilǐrén	（名）受当事人委托，代表其进行某种活动的人。attorney	attorney; agent
+chapter 4	22	相应	xiāngyìng	（动）在社会上跟环境（权利、声誉等）相配合。	to correspond; to match
+chapter 4	23	被告	bèigào	（名）被控告的一方。defendant, the accused。	defendant
+chapter 4	24	发布	fābù	（动）宣布（命令、指示、新闻等）；to issue or release。	to release; to publish
+chapter 4	25	违法	wéifǎ	（动）不遵守或违反法律。to break the law。	to break the law
+chapter 4	26	立案	lì àn	（动）在主管机关注册，登记。to register; to put on record。	to file a case; to register
+chapter 4	27	更改	gēnggǎi	（动）更换，改变：～意见｜～进车一～。	to change; to alter
+chapter 4	28	结局	jiéjú	（名）最后的结果，最终的局面。	outcome; ending
+chapter 4	29	撤诉	chèsù	（动）（原告）撤回诉讼。	to withdraw a lawsuit
+chapter 4	30	权益	quányì	（名）应按宪法或法律享受的不容侵犯的权利、利益。	rights and interests
+chapter 4	31	受理	shòulǐ	（动）接受案件，进行处理：～案件｜～诉讼案。	to accept (a case); to handle
+chapter 4	32	启动	qǐdòng	（动）（机器、设备等）开始工作：～发动机。	to start; to launch
+chapter 4	33	司法	sīfǎ	（动）依法审判案件的机关和活动；judicature。	judiciary
+chapter 4	34	授权	shòuquán	（动）把权利委托给别人或机构代为执行：授～。	to authorize
+chapter 4	35	司空见惯	sīkōng jiànguàn	因经常遇到或看到，已经习以为常。	commonplace; routine
+chapter 4	36	案子	ànzi	（名）案件，law suit case：一件～｜一大～。	case; lawsuit
+chapter 4	37	侵犯	qīnfàn	（动）非法干涉别人，损害其权利：～隐私｜～权利。	to violate; to infringe
+chapter 4	38	一审	yīshěn	（名）人民法院第一次开庭审理。	first instance; trial of first instance
+chapter 4	39	驳回	bóhuí	（动）本课指法院认为诉讼当事人提出的要求无理，不予处理：～上诉｜～起诉。	to reject; to overrule
+chapter 4	40	起诉	qǐsù	（动）to sue; to prosecute; to charge; to bring a suit/an action against sb。	to sue; to bring a suit
+chapter 4	41	上诉	shàngsù	（动）to appeal (to a higher court)。	to appeal
+chapter 4	42	慧眼识珠	huì yǎn shí zhū	称赞人善于识别人才。“慧眼”泛指敏锐的眼力。	to have an eye for talent
+chapter 5	1	督促	dūcù	（动）监督并催促：～孩子｜～学生。	to urge; to supervise
+chapter 5	2	考级	kǎo jí	（动）参加某专业或技能的定级或评定考试：钢琴～｜参加～。	to take a grade exam
+chapter 5	3	奢望	shēwàng	（名）过高的希望。	extravagant hope
+chapter 5	4	顽固	xùnnào	（动）人的思想、性格、行为、爱好等顽强坚持，不易改变（多指积极或健康的方面）：要对～多加鼓励。	stubborn; persistent (positive sense)
+chapter 5	5	高分	gāofēn	（名）高中而不俗气：～的寄托｜～的风度｜～的艺术。	refined taste; elegant
+chapter 5	6	就业	jiùyè	（动）得到职业，参加工作。	to get employed
+chapter 5	7	意愿	yìyuàn	（名）愿望，心愿。wish, desire, aspiration。	wish; aspiration
+chapter 5	8	苦心	kǔxīn	（名）辛苦地用在某些事情上的心思和精力：一片～｜一番～｜一经～。	painstaking effort
+chapter 5	9	期望值	qīwàng zhí	（名）对人或事情所希望的程度。	expectation level
+chapter 5	10	腾飞	téngfēi	（动）比喻发展迅速：经济～｜事业～。	to soar; to take off
+chapter 5	11	潜质	qiánzhì	（名）潜在的素质或才能：挖掘～。	potential; latent quality
+chapter 5	12	后劲	hòujìn	（名）事物后半程的力量或效果：缺乏～。	staying power; reserve
+chapter 5	13	骨干	gǔgàn	（名）在集体中起重要作用的中坚分子：班级～｜公司～。	backbone; core member
+chapter 5	14	敬业	jìngyè	（动）对职业尽心尽力：～精神。	to be dedicated to one's work
+chapter 5	15	拔尖	bájiān	（动）（在某方面）超过一般水平：学习～｜成绩～。	to be top-notch
+chapter 5	16	精力充沛	jīnglì chōngpèi	精力充足，十分旺盛。	full of energy
+chapter 5	17	位居前列	wèi jū qiánliè	名次排在前面。	to rank among the top
+chapter 5	18	成才	chéngcái	（动）成为人才：长大～｜培养子女～。	to become talented
+chapter 5	19	心甘情愿	xīn gān qíng yuàn	从心底愿意，丝毫不勉强。	willingly; gladly
+chapter 5	20	心态	xīntài	（名）心理状态：～好｜～年轻。	mindset; attitude
+chapter 5	21	传授	chuánshòu	（动）把知识、技艺教给别人：～知识｜～本领。	to pass on; to teach
+chapter 5	22	撒手	sāshǒu	（动）放开手，松开手。课文中指不管不问。	to let go; to wash one's hands of
+chapter 5	23	强化	qiánghuà	（动）加强某些方面，使更坚固或更有力：～训练｜～记忆。	to strengthen; to intensify
+chapter 5	24	足够	zúgòu	（形）达到应有的或需要的量或程度：～的时间｜～的信心。	enough; sufficient
+chapter 5	25	后劲	hòujìn	（名）事物完成后所表现出的力量：有～｜没～。	reserve; staying power
+chapter 5	26	体验	tǐyàn	（动）通过实践来认识周围的事物，亲身体会：～生活｜～感受。	to experience
+chapter 5	27	学业	xuéyè	（名）学习的功课和作业。one's studies, school work。	schoolwork; studies
+chapter 5	28	弱点	ruòdiǎn	（名）不足的地方，力量薄弱的方面。weakness, weak point。	weakness
+chapter 5	29	人际交往	rénjì jiāowǎng	指人与人之间相互交往。	interpersonal communication
+chapter 5	30	卓越	zhuóyuè	（形）非常优秀，超出一般：～的学业｜～的成就。	outstanding; excellent
+chapter 5	31	取决	qǔjué	（动）由某种或某种情况决定：～于态度｜～于条件。	to depend on
+chapter 5	32	智力	zhìlì	（名）理解和解决事物的能力和知识积累，包括记忆、观察、想象、思考、判断等。intelligence。	intelligence
+chapter 5	33	夸奖	kuājiǎng	（动）称赞：老师～他学习努力。	to praise
+chapter 5	34	意想不到	yìxiǎng bù dào	没有预想到。	unexpected
+chapter 5	35	层面	céngmiàn	（名）方面；多指一个～、每一个不同～。	level; aspect
+chapter 5	36	功利	gōnglì	（名）名声和利益。	fame and gain
+chapter 5	37	挑食	tiāoshí	（动）对食物有所选择，有的爱吃，有的不爱吃或不吃。	to be picky (about food)
+chapter 5	38	娇气	jiāoqì	（形）性格脆弱，经不起吃苦或受委屈：～的孩子｜～的小动物。	fragile; spoiled
+chapter 5	39	脆弱	cuìruò	（形）禁不起挫折，不坚强：～的神经｜～的感情。	fragile; vulnerable
+chapter 5	40	挫折	cuòzhé	（名）失败、失误；遭到～；受过～。	setback
+chapter 5	41	承受	chéngshòu	（动）接受，禁受：～压力｜～能力不足。	to bear; to endure
+chapter 5	42	智商	zhìshāng	（名）智力商数，即 intelligence quotient (IQ)。	IQ
+chapter 5	43	情商	qíngshāng	（名）情感商数，即 emotional quotient (EQ)。	EQ
+chapter 5	44	自理	zìlǐ	（动）自己料理：生活～｜能力～较高。	to take care of oneself
+chapter 6	1	拉动	lādòng	（动）促使：～消费｜～内需｜～经济发展。	to stimulate; to drive
+chapter 6	2	房地产	fángdìchǎn	（名）real estate：～公司｜～市场。	real estate
+chapter 6	3	深化	shēnhuà	（动）向更深的阶段发展：～改革｜～了解。	to deepen
+chapter 6	4	呼吁	hūyù	（动）向人或社会提出要求，请求帮助或支持：～世界和平。	to appeal; to call for
+chapter 6	5	渠道	qúdào	（名）途径；门路：扩大新闻～｜销售～。	channel; avenue
+chapter 6	6	产业	chǎnyè	（名）构成国民经济的若干门类之一：高科技～｜服务～。	industry
+chapter 6	7	存款	cúnkuǎn	（名）存放在银行里的钱。	savings deposit
+chapter 6	8	储蓄	chǔxù	（动）把钱存入银行或其他金融机构，以备将来使用：～一笔钱。	to save (money)
+chapter 6	9	寅吃卯粮	yín chī mǎo liáng	比喻收入不敷支用，把以后已经用到的收入都预先花掉。	to live beyond one's means
+chapter 6	10	大头（儿）	dàtóur	（名）大的那一部分；主要部分：～收入｜～支出。	main part; bulk
+chapter 6	11	花销	huāxiao	（动）花费，支出：～的费用｜生活～。	spending; expense
+chapter 6	12	富富有余	fùfù yǒuyú	形容非常富裕，绰绰有余。	more than enough
+chapter 6	13	化妆品	huàzhuāngpǐn	（名）cosmetics。	cosmetics
+chapter 6	14	腰包	yāobāo	（名）携带钱、物的小包。也指“钱包”。	wallet; pocket
+chapter 6	15	浓妆淡抹	nóngzhuāng dànmǒ	（成语）妆饰浓艳或素雅。课文指打扮程度不同。	heavy or light makeup
+chapter 6	16	对号入座	duì hào rù zuò	本来指按票座号入座；比喻有些人或事物对号入座，把自己对号联系起来。	to take the seat matching one's ticket; (fig.) to identify with
+chapter 6	17	追星族	zhuīxīngzú	（名）star fan；热衷于追随某一偶像或“明星”的一群人。	fan; star chaser
+chapter 6	18	人寿保险	rénshòu bǎoxiǎn	（名）保险种类之一，简称“寿险”。personal insurance。	life insurance
+chapter 6	19	水涨船高	shuǐ zhǎng chuán gāo	比喻事物价格的基础提高了，带动有关的也随之提高：工资～，房价也～。	when the water rises the boat goes up
+chapter 6	20	系数	xìshù	（名）科学技术上用来表示某种性质的程度或比率的数：保温～｜膨胀～。	coefficient
+chapter 6	21	起码	qǐmǎ	（形）最低限度的：～的要求｜～的条件。	at least; minimum
+chapter 6	22	尝试	chángshì	（动）试一试，尝试：～新东西｜～新的方法。	to try; to attempt
+chapter 6	23	股票	gǔpiào	（名）stock。	stock; share
+chapter 6	24	利率	lìlǜ	（名）interest rate：存款～｜贷款～比较高。	interest rate
+chapter 6	25	基金	jījīn	（名）fund：会计～｜教育～。	fund
+chapter 6	26	回报率	huíbàolǜ	（名）投资获益、理财产品等得到的利润率：～很高｜～不理想。	rate of return
+chapter 6	27	侃	kǎn	（动）（北方方言）闲谈，闲聊：～大山。	to chat; to shoot the breeze
+chapter 6	28	恐龙	kǒnglóng	（名）dinosaur。	dinosaur
+chapter 6	29	蜥蜴	xīyì	（名）lizard。	lizard
+chapter 6	30	因小失大	yīn xiǎo shī dà	为了小的利益而造成大的损失。	to lose the greater for the less
+chapter 6	31	报答	bàodá	（动）用实际行动来表示感激：～父母｜～他人的关心。	to repay; to require
+chapter 6	32	孝顺	xiàoshùn	（动）尽心照顾父母，顺从父母的意思：～父母。	filial piety
+chapter 6	33	下调	xiàtiáo	（动）（价格、利率等）向下调整。	to lower; to cut (price, rate)
+chapter 6	34	低迷	dīmí	（形）低落，不景气：市场～｜经济～。	slump; sluggish
+chapter 6	35	利息	lìxī	（名）因存款、放款等得到的本金以外的钱。interest。	interest
+chapter 6	36	行之有效	xíng zhī yǒu xiào	实施某一办法，措施很有效。	effective; to work
+chapter 6	37	火	huǒ	（形）兴盛，兴旺：这部电视剧很～。	popular; hot
+chapter 6	38	风情	fēngqíng	（名）（书面语）指地方的风貌和民俗风情。	local customs; flavor
+chapter 7	1	婚纱	hūnshā	（名）婚礼上新娘穿的一种特别的礼服。	wedding dress
+chapter 7	2	折腾	zhēteng	（动）翻来覆去地折腾；折腾：别～｜一大～｜一人～。	to toss and turn; to mess around
+chapter 7	3	如花似玉	rú huā sì yù	形容女子容貌美丽。	as beautiful as flowers
+chapter 7	4	燕尾服	yànwěifú	（名）一种男式黑色晚礼服，即 swallowtail。	tailcoat; swallowtail
+chapter 7	5	绅士	shēnshì	（名）指有身份、有地位、有教养的人物。gentleman, gentry。	gentleman
+chapter 7	6	风风雨雨	fēngfēng yǔyǔ	又是风，又是雨。比喻生活的艰难困苦。	trials and tribulations
+chapter 7	7	弥补	míbǔ	（动）补偿，补救：～损失｜～不足｜无法～。	to make up for
+chapter 7	8	歉憾	qiànhàn	（名）不够完美而使人遗憾的地方：有一点～。	regret; shortcoming
+chapter 7	9	孝心	xiàoxīn	（名）对父母、长辈孝敬的心意。filial sentiments, filial devotion。	filial devotion
+chapter 7	10	清贫	qīngpín	（形）清苦贫寒：～的生活｜～的过日子。	poor but honest
+chapter 7	11	纯真	chúnzhēn	（形）纯洁真实：～的孩子｜～的友谊｜～的情感。	pure; genuine
+chapter 7	12	风雨同舟	fēng yǔ tóng zhōu	在困难中同处一条船，比喻同患难共困境。	to stand together through hardship
+chapter 7	13	相濡以沫	xiāng rú yǐ mò	比喻同处困境、相互救助。	to help each other in distress
+chapter 7	14	映照	yìngzhào	（动）光线照射并反映出来：～在水中｜灯光～着笑脸。	to reflect; to shine on
+chapter 7	15	比喻	bǐyù	（名）用某些有共同点的事物比拟想要说明的某一事物，以便表达得更形象生动。metaphor, analogy。	metaphor; analogy
+chapter 7	16	贴切	tiēqiè	（形）所用的语言文字恰当、确切：比喻～｜用词～｜内容～。	apt; fitting
+chapter 7	17	秘诀	mìjué	（名）能解决问题的不公开的巧妙办法。secret (of success)。	secret (of success)
+chapter 7	18	无关紧要	wúguān jǐnyào	跟最重要的事没有什么关系。形容事情不重要，不是主要的。	unimportant; trivial
+chapter 7	19	包容	bāoróng	（动）宽容：～他人的缺点｜～别人｜学会～。	to tolerate; to be forgiving
+chapter 7	20	磨合	móhé	（动）本课指经过一段时间的共同经历和生活，逐渐相互适应：互相～｜不断～。	to break in; run-in period
+chapter 7	21	化解	huàjiě	（动）解除了结、消除：～矛盾｜～问题｜～困惑。	to resolve; to dissolve
+chapter 7	22	葬礼	mòsè dǎnkāi	（名）形容冷清、阴沉的场面或气氛：～的气氛。  # note: textbook word likely “墓葬典礼”, adjust if needed	funeral
+chapter 7	23	坟墓	fénmù	（名）埋葬死人的穴和上面的土堆。grave, tomb。	grave; tomb
+chapter 7	24	悲剧	bēijù	（名）比喻不幸的遭遇：一场～｜一出～。	tragedy
+chapter 7	25	白头到老	bái tóu dào lǎo	夫妻共同生活到老。也说“白头偕老”。	to grow old together
+chapter 7	26	张扬	zhāngyáng	（动）把不应让众人知道的事情在外宣扬出去：～出去｜很～。	to show off; to flaunt
+chapter 7	27	委曲求全	wěiqū qiú quán	（动）勉强忍受，以求保全；为顾全大局而暂时忍让。	to compromise for the sake of the whole
+chapter 7	28	同居	tóngjū	（动）课文中指男女双方没有结婚而共同生活。	to cohabit
+chapter 7	29	公证	gōngzhèng	（动）to notarize：～处｜～书｜做～。	to notarize
+chapter 7	30	热恋	rèliàn	（动）热烈地恋爱：两人正～之中｜一对～的情侣。	to be passionately in love
+chapter 7	31	违约	wéiyuē	（动）违背条约或契约：严重～｜一个人对另一个人～。	to breach a contract
+chapter 7	32	明智	míngzhì	（形）懂道理，有远见，想得周到的：～的家长｜～的办法。	wise; sensible
+chapter 7	33	纠纷	jiūfēn	（名）争执的事情。dispute, issue：产生～｜解决～。	dispute
+chapter 7	34	见外	jiànwài	（形）当成外人看待：别～｜太～了。	to treat as a stranger
+chapter 7	35	松散	sōngsǎn	（形）（事物结构）不紧密；松散：组织～｜纽带～。	loose; lax
+chapter 7	36	风吹草动	fēng chuī cǎo dòng	比喻轻微的变化。	a mere rustle; slight disturbance
+chapter 7	37	冒昧	màomèi	（形）（言行）不顾地位、能力、场合是否适合（多用作谦辞）：～地说｜～地批评｜～打扰。	presumptuous
+chapter 7	38	后妈	hòumā	（名）父亲后娶的妻子，也称“继母”。stepmother。	stepmother
+chapter 7	39	张口	zhāng kǒu	（动）不坚持（主张、意见等）：怎么都不～换？	to give in; to relent
+chapter 7	40	婆媳	póxí	（名）指婚后男方的母亲和妻子之间的关系。	mother-in-law and daughter-in-law
+chapter 7	41	乖巧	guāiqiǎo	（形）形容善解人意、讨人喜欢：～的孩子｜～的小狗｜她真～。	well-behaved; clever
+chapter 8	1	壮举	zhuàngjǔ	（名）突出的举动，伟大的行为。	bold feat
+chapter 8	2	捐	juān	（动）献出财物：～钱｜～物｜捐款。	to donate
+chapter 8	3	受宠若惊	shòu chǒng ruò jīng	受到意外的宠爱或优待而感到惶恐不安。	overwhelmed by favor
+chapter 8	4	微薄	wēibó	（形）微小单薄，量少：～的收入｜～的工资。	meager; slender
+chapter 8	5	杯水车薪	bēi shuǐ chē xīn	比喻力量太小，起不了作用。	a drop in the bucket
+chapter 8	6	贫困	pínkùn	（形）贫穷困苦：～的生活｜～家庭。	poor; impoverished
+chapter 8	7	难关	nánguān	（名）比喻不容易克服的困难：度过～｜闯～。	difficulty; hurdle
+chapter 8	8	资助	zīzhù	（动）用财物帮助：朋友～｜亲戚～｜一笔～。	to subsidize; to fund
+chapter 8	9	募捐	mùjuān	（动）广泛征集捐款或捐物：～救灾｜发起～。	to solicit donations
+chapter 8	10	慰劳	wèiláo	（动）安慰和慰问，表示对辛勤劳动者的关怀：～前线战士。	to show appreciation to
+chapter 8	11	宗旨	zōngzhǐ	（名）主要的思想、意图和目的。	aim; purpose
+chapter 8	12	袖手旁观	xiù shǒu páng guān	比喻置身事外，不过问或不参与。	to stand by with folded arms
+chapter 8	13	无私奉献	wúsī fèngxiàn	形容不计个人利益，专心为集体或他人付出。	selfless dedication
+chapter 8	14	将功补过	jiāng gōng bǔ guò	用功劳来弥补过失。	to atone by good deeds
+chapter 8	15	遵命	zūnmìng	（动）遵照对方的命令，表示“服从”之意。	to obey (an order)
+chapter 8	16	残疾	cánjí	（名）肢体、器官或其功能方面的缺陷：～人｜残～。	disability
+chapter 8	17	盲人	mángrén	（名）失去视力的人。blind person。	blind person
+chapter 8	18	易如反掌	yì rú fǎn zhǎng	像翻一下手掌那样容易。比喻事情很容易做。	as easy as turning one's hand
+chapter 8	19	小拇指	xiǎomǔzhǐ	（名）即小指。	little finger
+chapter 8	20	调料	tiáoliào	（名）烹调用来增加滋味的油、盐、酱、醋等调味品。	seasoning
+chapter 8	21	狼狈	lángbèi	（形）形容窘迫或难堪的样子：～的样子｜～不堪。	in a sorry state; embarrassed
+chapter 8	22	跌跌撞撞	diēdiē zhuàngzhuàng	形容路走得摇晃不稳，像要摔倒的样子。	to stagger; to stumble
+chapter 8	23	碰壁	pèngbì	（动）遇到阻碍，遭到拒绝：处处～｜到处～。	to run into a wall
+chapter 8	24	欣慰	xīnwèi	（形）感到欣喜而心里安慰：收获让人～。	gratified; relieved
+chapter 8	25	安居	ānjū	（动）安定地居住：～乐业。	to settle down
+chapter 8	26	康复	kāngfù	（动）恢复健康：身体～｜病后已完全～。	to recover (health)
+chapter 8	27	扶贫	fúpín	（动）扶助贫困的人或地区发展经济，改变贫困面貌：～工作。	poverty alleviation
+chapter 8	28	维权	wéiquán	（动）维护合法权利：为患者～｜～行动。	to protect one's rights
+chapter 8	29	助学	zhùxué	（动）帮助贫困者完成学业：～基金｜～活动。	to support students (financially)
+chapter 8	30	发放	fāfàng	（动）（政府、机构）把钱或物资发给需要的人：～助学金｜～食品。	to distribute; to issue
+chapter 8	31	全方位	quánfāngwèi	（名）事物的各个方面；各个方向和层面。	all-round; comprehensive
+chapter 8	32	社区	shèqū	（名）以一定地域为基础的社会群体；城市中按行政区划划分的居民区。	community
+chapter 8	33	乐呵呵	lèhēhē	（形）形容高兴的样子：～地说｜～地笑。	cheerful; happy
+chapter 8	34	义工	yìgōng	（名）自愿参加无报酬的公益性工作的人员。volunteer。	volunteer
+chapter 8	35	素质	sùzhì	（名）平时的修养、文化、教育、素养等的综合水平。	quality; caliber
+chapter 8	36	集聚	jíjù	（动）集合、聚集：～在车站｜人才～｜精英～。	to gather; to cluster
+chapter 8	37	境界	jìngjiè	（名）事物所达到的程度或表现的情况：～很高｜～不一般。	realm; level
+chapter 8	38	有声有色	yǒu shēng yǒu sè	形容表现得十分生动。	vivid; lively
+chapter 8	39	认养	rènyǎng	（动）经过确认而承担抚养或保护的任务：～一棵树｜～一条小巷。	to adopt (e.g. a tree); to sponsor
+chapter 8	40	捡拾	jiǎnshí	（动）拾取：～垃圾｜一起～。	to pick up
+chapter 8	41	流浪	liúlàng	（动）没有固定的住所，到处漂泊，生活没有着落：～汉｜～者｜～动物。	to wander; to roam
+chapter 9	1	咨询	zīxún	（动）询问、征求意见：向医生～｜向律师～。	to consult
+chapter 9	2	体检	tǐjiǎn	（动）体格检查：做～｜每年～。	physical exam
+chapter 9	3	记性	jìxing	（名）记忆力：～好｜～差。	memory
+chapter 9	4	够呛	gòuqiàng	（形）形容情况非常严重，令人难以承受：累得～｜疼得～。	terrible; unbearable
+chapter 9	5	总管	zǒngguǎn	（名）全面管理事务的人。	manager; person in charge
+chapter 9	6	担子	dànzi	（名）比喻担负的责任：～重｜挑～。	burden; load
+chapter 9	7	介于	jièyú	（动）在两者之间。	to be between
+chapter 9	8	减退	jiǎntuì	（动）下降，减弱：能力～｜视力～。	to decline; to decrease
+chapter 9	9	疲乏	pífá	（形）因体力或脑力消耗过多而需要休息：感到～。	weary; fatigued
+chapter 9	10	健忘	jiànwàng	（形）记忆力差，容易忘记：～症｜越来越～。	forgetful
+chapter 9	11	不良	bùliáng	（形）不好的：～习惯｜～影响。	bad; unhealthy
+chapter 9	12	酗酒	xùjiǔ	（动）无节制地饮酒。	to drink excessively
+chapter 9	13	膳食	shànshí	（名）每天吃的饭菜。	diet; meals
+chapter 9	14	失衡	shīhéng	（动）失去平衡：营养～｜心理～。	to be out of balance
+chapter 9	15	祸根	huògēn	（名）出现灾祸的根源。	root of evil
+chapter 9	16	应酬	yìngchóu	（名）交际应酬的活动：参加～｜业务～。	social engagement
+chapter 9	17	硬撑	yìngchēng	（动）勉强支撑：～着工作｜～着熬夜。	to hold on by a thread
+chapter 9	18	天长日久	tiān cháng rì jiǔ	时间长，日子久。	over a long period
+chapter 9	19	恶果	èguǒ	（名）坏结果：产生～｜避免出现～。	evil consequence
+chapter 9	20	屡见不鲜	lǚ jiàn bù xiān	经常看见，并不新奇。	commonplace; nothing new
+chapter 9	21	延续	yánxù	（动）持续下去：～一段时间｜～生命。	to continue; to extend
+chapter 9	22	全天候	quán tiān hòu	（形）每天工作满二十四小时的：～飞机｜～服务。	around-the-clock
+chapter 9	23	熬夜	áoyè	（动）整夜或深夜不睡觉：～看球赛｜～看书。	to stay up late
+chapter 9	24	宵夜	xiāoyè	（名）夜里吃的简便饭菜或点心。	midnight snack
+chapter 9	25	满满当当	mǎn mǎn dàng dàng	（形）形容非常满：车厢里～。	full to the brim
+chapter 9	26	透支	tòuzhī	（动）提取超过存款金额的钱，比喻精神、体力消耗过度，超出正常的承受能力：银行卡～｜精力～。	overdraft; to overdraw
+chapter 9	27	张弛有度	zhāng chí yǒu dù	张，紧张；弛，放松。合理安排生活和工作，该紧张时紧张，该放松时放松。	to balance tension and relaxation
+chapter 9	28	基因	jīyīn	（名）生物体携带和遗传信息的基本单位。gene。	gene
+chapter 9	29	遗传	yíchuán	（动）生物的特质在生理或性状等方面由上一代传给下一代：～给孩子｜～疾病。	to inherit; heredity
+chapter 9	30	吓唬	xiàhu	（动）使害怕：～人｜～小动物。	to frighten; to scare
+chapter 9	31	语重心长	yǔ zhòng xīn cháng	指言语恳切而有分量，情意深长。	sincere and earnest
+chapter 9	32	灵丹妙药	língdān miàoyào	（名）非常神奇的药，比喻能解决问题的好办法。	magic bullet; panacea
+chapter 9	33	均衡	jūnhéng	（形）均匀平衡：营养～｜发展～。	balanced; even
+chapter 9	34	开朗	kāilǎng	（形）乐观，爽快，不忧沉：性格～｜～的笑容。	cheerful; outgoing
+chapter 9	35	平和	pínghé	（形）温和，和气：～的心态｜～的表情。	calm; even-tempered
+chapter 9	36	神清气爽	shén qīng qì shuǎng	形容精神饱满，心情舒畅。	refreshed; invigorated
+chapter 9	37	倡导	chàngdǎo	（动）提倡：～一种健康生活｜～绿色出行。	to advocate
+chapter 9	38	精辟	jīngpì	（形）深刻，透彻：～的见解｜～的一句话。	incisive; penetrating
+chapter 9	39	金玉良言	jīn yù liáng yán	（名）像金玉一样珍贵的话，形容极其宝贵的教导或言论。	golden words; precious advice
