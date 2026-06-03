@@ -96,8 +96,9 @@ The web UI is a FastAPI app served from `api/index.py`. Vercel installs dependen
 **Ignored via `.gitignore`** (stay local only): `apps/transcriber/`, `apps/textbook_vocab/`, `scripts/`, `outputs/`, Anki builders, `locale_data/` authoring, other `run_*.sh`, etc.
 
 1. Commit and push to GitHub.
-2. [Vercel](https://vercel.com/new) → import repo → root directory = repo root. **Framework Preset: Other** is fine. The app runs from `api/index.py` (exports `app`); `vercel.json` rewrites all paths to `/api/index` (no `.py` suffix — that would download the source file). Dependencies: root `requirements.txt` + `installCommand` → `python_deps/`.
-3. Deploy (use **Clear build cache** after changing Python deps).
+2. [Vercel](https://vercel.com/new) → import repo. **Critical dashboard settings:** Root Directory = repo root; **Build Command** and **Output Directory** overrides must be **OFF** (empty). If Output Directory is `public` or `dist`, you will get **404 on every URL**. See [docs/VERCEL_SETUP.md](docs/VERCEL_SETUP.md).
+3. `vercel.json` uses `builds` + `@vercel/python` on `api/index.py` so Vercel actually creates a Python function (rewrites alone are not enough on Framework Preset “Other”).
+4. Deploy with **Clear build cache**. Build log should mention Python/`api/index.py`, not finish in ~14ms with no function.
 
 **Pre-deploy check:**
 
