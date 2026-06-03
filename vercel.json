@@ -1,6 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "python3 -m pip install --disable-pip-version-check -r requirements.txt -t python_deps",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/app.py"
+    }
+  ],
   "env": {
     "PYTHONPATH": "."
   }

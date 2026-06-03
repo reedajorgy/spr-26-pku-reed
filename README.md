@@ -58,8 +58,9 @@ Master decks are in `finals-flashcards-csvs/*.csv`. Mother-tongue glosses live i
 One import covers **口语 Kouyu** and **精读 Jingdu**, every chapter, vocab / grammar / word-differences, and **all mother languages** with an in-card dropdown (preference saved via `localStorage` on desktop Anki).
 
 ```bash
-./run_build_finals_anki.sh
-# same nested master deck -> outputs/finals-master.apkg
+./run_build_master_finals_anki.sh
+# or: PYTHONPATH=. python apps/flashcards/export_master_anki.py
+# -> outputs/finals-master.apkg (Vocab + Grammar + Word_Differences for Kouyu & Jingdu)
 ```
 
 **Subdeck layout:**
@@ -95,7 +96,7 @@ The web UI is a FastAPI app served from `api/index.py`. Vercel installs dependen
 **Ignored via `.gitignore`** (stay local only): `apps/transcriber/`, `apps/textbook_vocab/`, `scripts/`, `outputs/`, Anki builders, `locale_data/` authoring, other `run_*.sh`, etc.
 
 1. Commit and push to GitHub.
-2. [Vercel](https://vercel.com/new) → import repo → root directory = repo root. Vercel should auto-detect **FastAPI** from `pyproject.toml` (`[tool.vercel] entrypoint = "api.index:app"`). Do **not** add a `functions.api/...` block in `vercel.json` — that pattern is for legacy `/api` serverless files only.
+2. [Vercel](https://vercel.com/new) → import repo → root directory = repo root. Vercel auto-detects **FastAPI** from root `app.py` (exports `app`) plus `pyproject.toml` dependencies. `vercel.json` rewrites all paths to `/app.py`. Do **not** add a `functions.api/...` block — that breaks the zero-config FastAPI build.
 3. Deploy (use **Clear build cache** after changing Python deps).
 
 **Pre-deploy check:**

@@ -7,6 +7,3 @@ dependencies = [
     "fastapi>=0.115.0",
     "uvicorn>=0.32.0",
 ]
-
-[tool.vercel]
-entrypoint = "api.index:app"

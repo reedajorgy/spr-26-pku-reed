@@ -510,6 +510,7 @@ function renderVocabStudyCard(record) {
   <div class="meta-line text-zh"><span class="meta-label">例句</span> ${escapeHtml(anki.ExampleCN || "")}</div>
   ${exampleTranslation ? `<div class="meta-line text-mother">${escapeHtml(exampleTranslation)}</div>` : ""}
   ${usageNote ? `<div class="meta-line text-mother"><span class="meta-label">用法</span> ${escapeHtml(usageNote)}</div>` : ""}
+  ${anki.CommonErrors ? `<div class="meta-line text-mother"><span class="meta-label">易错</span> ${escapeHtml(anki.CommonErrors)}</div>` : ""}
   ${anki.RelatedWords ? `<div class="meta-line text-zh"><span class="meta-label">相关</span> ${escapeHtml(anki.RelatedWords)}</div>` : ""}
 </div>
 `;

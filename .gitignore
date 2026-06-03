@@ -99,9 +99,7 @@ agent-transcripts/
 /apps/lecture_review/
 /apps/class_summarizer/
 
-# Flashcards build / overlay authoring (runtime uses finals-flashcards-csvs/ only)
-/apps/flashcards/anki_master.py
-/apps/flashcards/anki_build.py
+# Flashcards overlay authoring (runtime uses finals-flashcards-csvs/ only)
 /apps/flashcards/locale_data/
 /apps/flashcards/write_overlay_csv.py
 /apps/flashcards/validate_locales.py
@@ -116,9 +114,11 @@ agent-transcripts/
 /other/
 /assets/
 
-# Local runners (web app only)
+# Local runners (web + Anki export)
 /run_*.sh
 !/run_flashcards_web.sh
+!/run_build_master_finals_anki.sh
+!/run_build_finals_anki.sh
 /run_transcription.sh
 
 # Anki packages and heavy models
@@ -135,3 +135,5 @@ run_transcription.sh
 run_flashcards_web.sh
 run_transcription.sh
 run_transcription.sh
+run_build_finals_anki.sh
+run_build_master_finals_anki.sh
