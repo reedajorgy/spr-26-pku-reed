@@ -1,4 +1,3 @@
 # Vercel + local web app (Reed's Finals Flashcards)
 fastapi>=0.115.0
-mangum>=0.17.0
 uvicorn>=0.32.0

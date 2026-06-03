@@ -47,4 +47,5 @@ agent-transcripts
 **/*.mp4
 **/*.pdf
 
-requirements-dev.txt
+# Only ignore dev deps file — do NOT add bare "requirements.txt" (matches api/requirements.txt too).
+/requirements-dev.txt

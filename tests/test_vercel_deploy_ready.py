@@ -62,6 +62,17 @@ class VercelDeployReadyTests(unittest.TestCase):
         self.assertIsNotNone(app)
         self.assertEqual(app.title, "Reed's Finals Flashcards")
 
+    def test_api_index_exports_fastapi_app(self) -> None:
+        repo_root = Path(__file__).resolve().parents[1]
+        python_deps = repo_root / "python_deps"
+        self.assertTrue(
+            python_deps.is_dir(),
+            "Run: python3 -m pip install -r requirements.txt -t python_deps",
+        )
+        from api.index import app as vercel_app
+
+        self.assertEqual(getattr(vercel_app, "title", None), "Reed's Finals Flashcards")
+
 
 if __name__ == "__main__":
     unittest.main()

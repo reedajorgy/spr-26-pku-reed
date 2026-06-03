@@ -20,7 +20,7 @@ from apps.flashcards.locale_manifest import (
     normalize_locale,
 )
 from apps.flashcards.merge import merge_deck_to_records
-from apps.flashcards.paths import FINALS_DIR
+from apps.flashcards.paths import FINALS_DIR, MANIFEST_PATH
 from apps.flashcards.study_prefs import study_prefs_api_payload
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
@@ -198,6 +198,58 @@ def api_chapters(
         key=lambda label: int("".join(filter(str.isdigit, label)) or "0"),
     )
     return {"deck": deck, "course": course, "aspect": aspect, "chapters": ordered}
+
+
+@app.get("/api/deploy-check")
+def api_deploy_check() -> dict[str, Any]:
+    """Runtime diagnostics for Vercel/local deploy verification."""
+    import sys
+
+    from apps.flashcards.web.deploy_debug import DEPLOY_DIAGNOSTICS, agent_log
+
+    # region agent log
+    agent_log(
+        "H5",
+        "app.py:deploy-check",
+        "deploy-check requested",
+        {},
+    )
+    # endregion
+
+    overlay_locales = [
+        code
+        for code in load_manifest().get("supported_locales", [])
+        if code != "en"
+    ]
+    overlay_count = sum(
+        1
+        for locale_code in overlay_locales
+        for deck_name in get_deck_specs()
+        if (FINALS_DIR / "locales" / locale_code / f"{deck_name}.csv").is_file()
+    )
+    python_deps_dir = FINALS_DIR.parent / "python_deps"
+    diagnostics = {
+        "status": "ok",
+        "app_title": app.title,
+        "repo_root": str(FINALS_DIR.parent),
+        "python_deps_exists": python_deps_dir.is_dir(),
+        "finals_dir_exists": FINALS_DIR.is_dir(),
+        "manifest_exists": MANIFEST_PATH.is_file(),
+        "static_index_exists": (STATIC_DIR / "index.html").is_file(),
+        "deck_count": len(get_deck_specs()),
+        "overlay_csv_count": overlay_count,
+        "python_version": sys.version,
+        "import_diagnostics": dict(DEPLOY_DIAGNOSTICS),
+    }
+    try:
+        import fastapi as fastapi_module
+
+        diagnostics["fastapi_version"] = fastapi_module.__version__
+    except ImportError as error:
+        diagnostics["fastapi_version"] = f"missing: {error}"
+        diagnostics["status"] = "degraded"
+
+    return diagnostics
 
 
 @app.get("/")
