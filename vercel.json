@@ -11,16 +11,7 @@
     "api/index.py": {
       "maxDuration": 30,
       "memory": 1024,
-      "includeFiles": [
-        "finals-flashcards-csvs/**",
-        "apps/flashcards/web/**",
-        "apps/flashcards/merge.py",
-        "apps/flashcards/hierarchy.py",
-        "apps/flashcards/locale_manifest.py",
-        "apps/flashcards/paths.py",
-        "apps/flashcards/study_prefs.py",
-        "apps/flashcards/__init__.py"
-      ]
+      "includeFiles": "{finals-flashcards-csvs/**,apps/flashcards/**}"
     }
   },
   "env": {
