@@ -96,7 +96,7 @@ The web UI is a FastAPI app served from `api/index.py`. Vercel installs dependen
 **Ignored via `.gitignore`** (stay local only): `apps/transcriber/`, `apps/textbook_vocab/`, `scripts/`, `outputs/`, Anki builders, `locale_data/` authoring, other `run_*.sh`, etc.
 
 1. Commit and push to GitHub.
-2. [Vercel](https://vercel.com/new) → import repo → root directory = repo root. Set **Framework Preset** to **FastAPI** (not “Other”). Root `app.py` exports `app`; `pyproject.toml` sets `[tool.vercel] entrypoint = "app:app"`. Do **not** rewrite routes to `/app.py` or any `*.py` path — that serves the source file as a download instead of running Python.
+2. [Vercel](https://vercel.com/new) → import repo → root directory = repo root. **Framework Preset: Other** is fine. The app runs from `api/index.py` (exports `app`); `vercel.json` rewrites all paths to `/api/index` (no `.py` suffix — that would download the source file). Dependencies: root `requirements.txt` + `installCommand` → `python_deps/`.
 3. Deploy (use **Clear build cache** after changing Python deps).
 
 **Pre-deploy check:**
