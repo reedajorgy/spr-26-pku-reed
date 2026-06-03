@@ -1,5 +1,5 @@
 """
-Optional /api/index serverless path — same app as root main.py.
+Root FastAPI entrypoint for Vercel (serves /, /api/*, /static/* on one function).
 """
 from __future__ import annotations
 

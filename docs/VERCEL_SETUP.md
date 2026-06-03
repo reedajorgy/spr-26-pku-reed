@@ -1,39 +1,44 @@
-# Vercel setup (read this if you get 404 NOT_FOUND)
+# Vercel setup (404 NOT_FOUND)
 
-Local `uvicorn` works because **you** start Python. Vercel only runs Python if the build **creates a serverless function**. If the build finishes in ~1 second with no Python step, you get **404 on every URL** (including `/api/index`).
+## That log you pasted
 
-## Check your Vercel project settings
+`GET / → 404`, **Middleware**, ~43ms, deployment `dpl_4eZYsZQtCy7Zkhh1vzHdHYaXUD1C` means **no Python app was running** on that deployment. It is not a bug in your study UI code.
 
-In [Vercel Dashboard](https://vercel.com) → your project → **Settings** → **General** → **Build & Development Settings**:
+**Check the deployment’s commit** in the Vercel UI. If it is not the latest `main` with `main.py` at the repo root, you are still looking at an old broken deploy.
 
-| Setting | Correct value | Wrong value (causes 404) |
-|--------|----------------|---------------------------|
-| **Root Directory** | *(empty)* or `.` | A subfolder that does not contain `api/index.py` |
-| **Framework Preset** | **Other** | N/A (Other is fine with `vercel.json` `builds`) |
-| **Build Command** | **empty** (Override **off**) | `npm run build`, `next build`, etc. |
-| **Output Directory** | **empty** (Override **off**) | `public`, `dist`, `.next`, `build` |
-| **Install Command** | **empty** (use `vercel.json`) or match repo | Something that skips Python |
+## Why local works
 
-**Output Directory is the #1 misclick.** If Vercel looks for static files in `public/` and there is no app there, every request returns `NOT_FOUND`.
+`./run_flashcards_web.sh` starts **uvicorn** on your machine. Vercel only runs what the **build** produces. If the build never creates a FastAPI function, every URL returns `NOT_FOUND`.
 
-## What this repo uses
+## Dashboard settings (do this in the UI)
 
-- `vercel.json` **`version": 2`** + **`builds`** `@vercel/python` on `api/index.py` — forces one Python function to be built.
-- **`routes`** send all paths to `api/index.py` (not `/app.py` — that would download source).
-- `installCommand` vendors deps into `python_deps/`; `api/index.py` adds that to `sys.path`.
+[Vercel Dashboard](https://vercel.com) → project → **Settings** → **General** → **Build & Development Settings**
 
-## After pushing
+| Setting | Required |
+|--------|----------|
+| **Root Directory** | Empty (repository root) |
+| **Framework Preset** | **FastAPI** (not “Other”) |
+| **Build Command** | Override **OFF** (empty) |
+| **Output Directory** | Override **OFF** (empty) — **never** `public` or `dist` |
+| **Install Command** | Override **OFF** (use repo `vercel.json`) |
 
-1. **Deployments** → **Redeploy** → enable **Clear build cache**.
-2. Open the new deployment’s **Build** log. You should see **`@vercel/python`** / `api/index.py`, not only `Build Completed in /vercel/output [14ms]`.
-3. Test:
-   - `https://YOUR-URL/api/deploy-check` → JSON (not 404)
-   - `https://YOUR-URL/` → study UI
+**Output Directory** set to `public` is the most common cause of sitewide 404.
 
-## Still 404?
+After changing Framework to **FastAPI**, redeploy with **Clear build cache**.
 
-Paste from the latest deployment:
+## How this repo deploys
 
-- Build log (full)
-- Screenshot of **Build & Development Settings**
-- Result of `curl -I https://YOUR-URL/api/index`
+- Root **`main.py`** exports `app` (handles `/`, `/api/deploy-check`, `/static/`, etc.).
+- **`pyproject.toml`**: `[tool.vercel] entrypoint = "main:app"`.
+- **`vercel.json`**: only `installCommand` (vendors deps into `python_deps/`) and `PYTHONPATH=.`.
+- **Do not** use `rewrites` to `*.py` paths (downloads source).
+- **Do not** use legacy `builds` / `functions.api/index.py` (conflicts with modern FastAPI builds).
+
+## Verify after deploy
+
+```bash
+curl -sS -o /dev/null -w "%{http_code}\n" https://YOUR-PROJECT.vercel.app/api/deploy-check
+```
+
+- **200** + JSON → working.
+- **404** → build still did not produce a Python function; send the **full build log** and a screenshot of Build settings.
