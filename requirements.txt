@@ -5,3 +5,7 @@ tqdm>=4.66.0
 soundfile>=0.12.1
 zhconv>=1.4.0
 requests>=2.31.0
+pillow>=10.0.0
+genanki>=0.13.0
+fastapi>=0.115.0
+uvicorn>=0.32.0

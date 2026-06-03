@@ -9,20 +9,38 @@ VOCAB_PAGES_BY_CHAPTER = {
 
 
 def run_tesseract_on_image(image_path: Path) -> str:
-    process = subprocess.run(
-        [
-            "tesseract",
-            str(image_path),
-            "stdout",
-            "-l",
-            "chi_sim+eng",
-            "--psm",
-            "4",
-        ],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        process = subprocess.run(
+            [
+                "tesseract",
+                str(image_path),
+                "stdout",
+                "-l",
+                "chi_sim+eng",
+                "--psm",
+                "4",
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except FileNotFoundError as error:
+        raise SystemExit(
+            "Missing 'tesseract'. Install it, e.g. 'brew install tesseract', then retry."
+        ) from error
+    except subprocess.CalledProcessError as error:
+        stderr = (error.stderr or "").strip()
+        hint = (
+            "Tesseract failed.\n\n"
+            "Common fixes on macOS:\n"
+            "- Install language data: 'brew install tesseract-lang'\n"
+            "- Or ensure chi_sim.traineddata exists and TESSDATA_PREFIX points at tessdata\n\n"
+            f"Image: {image_path}\n"
+            f"Command: {' '.join(str(part) for part in error.cmd)}\n"
+        )
+        if stderr:
+            hint += f"\n--- tesseract stderr ---\n{stderr}\n"
+        raise SystemExit(hint) from error
     return process.stdout
 
 

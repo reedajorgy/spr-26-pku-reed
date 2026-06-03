@@ -1,0 +1,95 @@
+{
+  "default_locale": "en",
+  "supported_locales": ["en", "ru", "ko", "ja", "es", "vi", "hi", "fr"],
+  "locale_labels": {
+    "en": "English",
+    "ru": "Русский",
+    "ko": "한국어",
+    "ja": "日本語",
+    "es": "Español",
+    "vi": "Tiếng Việt",
+    "hi": "हिन्दी",
+    "fr": "Français"
+  },
+  "master_deck_name": "PKU Spring 2026 Finals",
+  "courses": {
+    "kouyu": {
+      "label": "Kouyu",
+      "label_zh": "口语",
+      "deck_keys": ["kouyu-qimo-vocab", "kouyu-qimo-grammar"]
+    },
+    "jingdu": {
+      "label": "Jingdu",
+      "label_zh": "精读",
+      "deck_keys": [
+        "jingdu-qimo-vocab",
+        "jingdu-qimo-grammar",
+        "jingdu-qimo-differences"
+      ]
+    }
+  },
+  "aspects": {
+    "kouyu-qimo-vocab": "Vocab",
+    "kouyu-qimo-grammar": "Grammar",
+    "jingdu-qimo-vocab": "Vocab",
+    "jingdu-qimo-grammar": "Grammar",
+    "jingdu-qimo-differences": "Word_Differences"
+  },
+  "decks": {
+    "kouyu-qimo-vocab": {
+      "master_file": "kouyu-qimo-vocab.csv",
+      "join_keys": ["Chapter", "hanzi"],
+      "master_fields": {
+        "meaning": "英文意义",
+        "example_en": "example_sentence_en",
+        "usage_note": "usage_note"
+      },
+      "overlay_fields": ["meaning", "example_en", "usage_note"],
+      "anki_vocab": true
+    },
+    "jingdu-qimo-vocab": {
+      "master_file": "jingdu-qimo-vocab.csv",
+      "join_keys": ["Chapter", "hanzi"],
+      "master_fields": {
+        "meaning": "英文意义",
+        "example_en": "example_sentence_en",
+        "usage_note": "usage_note"
+      },
+      "overlay_fields": ["meaning", "example_en", "usage_note"],
+      "anki_vocab": true
+    },
+    "jingdu-qimo-grammar": {
+      "master_file": "jingdu-qimo-grammar.csv",
+      "join_keys": ["Chapter", "Grammar Point"],
+      "master_fields": {
+        "use_case": "Use Case / Meaning",
+        "example_1_en": "Example 1 English",
+        "example_2_en": "Example 2 English",
+        "example_3_en": "Example 3 English"
+      },
+      "overlay_fields": ["use_case", "example_1_en", "example_2_en", "example_3_en"],
+      "anki_vocab": false
+    },
+    "kouyu-qimo-grammar": {
+      "master_file": "kouyu-qimo-grammar.csv",
+      "join_keys": ["Chapter", "Pattern Template"],
+      "master_fields": {
+        "explanation": "English Explanation"
+      },
+      "overlay_fields": ["explanation"],
+      "anki_vocab": false
+    },
+    "jingdu-qimo-differences": {
+      "master_file": "jingdu-qimo-differences.csv",
+      "join_keys": ["Chapter", "Word Pair", "Word"],
+      "master_fields": {
+        "nuance": "Nuance & Use Cases",
+        "grammar_notes": "Grammar Considerations",
+        "example_1_en": "Example 1 English",
+        "example_2_en": "Example 2 English"
+      },
+      "overlay_fields": ["nuance", "grammar_notes", "example_1_en", "example_2_en"],
+      "anki_vocab": false
+    }
+  }
+}

@@ -28,12 +28,14 @@ pip-wheel-metadata/
 *.manifest
 *.spec
 
-# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 .python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 ############
 # Node.js  #
@@ -74,24 +76,57 @@ logs/
 *.sln
 *.swp
 *.swo
+.cursor/
+agent-transcripts/
 
 #####################
-# Jupyter / data    #
+# Jupyter / misc    #
 #####################
 
 .ipynb_checkpoints/
 .jupyter/
-
-#####################
-# Misc              #
-#####################
-
 *.bak
 *.tmp
 *~
 
+##################################################################
+# Reed's Finals Flashcards (Vercel) — ignore everything else     #
+##################################################################
+
+# Other apps (transcription, textbook OCR, lecture review, …)
+/apps/transcriber/
+/apps/textbook_vocab/
+/apps/lecture_review/
+/apps/class_summarizer/
+
+# Flashcards build / overlay authoring (runtime uses finals-flashcards-csvs/ only)
+/apps/flashcards/anki_master.py
+/apps/flashcards/anki_build.py
+/apps/flashcards/locale_data/
+/apps/flashcards/write_overlay_csv.py
+/apps/flashcards/validate_locales.py
+/apps/flashcards/scaffold_locales.py
+
+# Repo tooling and generated artifacts
+/scripts/
+/outputs/
+/old_materials/
+/raw_materials/
 /lecture_recordings/
 /other/
-/raw_materials
-/old_materials
+/assets/
 
+# Local runners (web app only)
+/run_*.sh
+!/run_flashcards_web.sh
+/run_transcription.sh
+
+# Anki packages and heavy models
+*.apkg
+*.argosmodel
+
+# Anki template tests (not used by Vercel web app)
+/tests/test_anki_study_templates.py
+
+# Vercel local metadata
+.vercel

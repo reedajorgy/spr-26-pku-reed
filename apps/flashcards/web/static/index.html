@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Reed's Finals Flashcards</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-web/style.css" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Reed's Finals Flashcards</h1>
+      <p class="subtitle">Study finals vocab, grammar, and word differences — synced with the Anki master deck.</p>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <details id="setup-panel" class="setup-panel">
+      <summary class="setup-summary">
+        <span class="setup-summary-title">Study setup</span>
+        <span id="setup-summary-hint" class="setup-summary-hint muted">Tap to configure filters</span>
+      </summary>
+      <div class="setup-panel-body">
+        <p class="muted settings-hint">Filters and preferences are saved in this browser.</p>
+        <div class="study-instructions muted">
+          <p class="study-instructions-title">How to study</p>
+          <ul>
+            <li>Reveal 汉字, 拼音, <strong>Definition</strong>, or 例句 as needed.</li>
+            <li>Tap <strong>Answer</strong>, then rate the card (1–4).</li>
+            <li><strong>Mother language</strong> loads definitions and example translations from locale overlays.</li>
+          </ul>
+        </div>
+        <div class="field-row">
+          <label for="locale-select">Mother language</label>
+          <select id="locale-select" class="spr26-locale-select"></select>
+        </div>
+        <div class="field-row">
+          <label for="course-select">Course</label>
+          <select id="course-select">
+            <option value="">All courses</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="aspect-select">Card type</label>
+          <select id="aspect-select">
+            <option value="">All card types</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="deck-select">Deck</label>
+          <select id="deck-select">
+            <option value="">All decks in filter</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="chapter-select">Chapter</label>
+          <select id="chapter-select">
+            <option value="">All chapters</option>
+          </select>
+        </div>
+        <div class="field-row field-row-check">
+          <label>
+            <input type="checkbox" id="auto-reveal-checkbox" checked />
+            Reveal examples when showing answer
+          </label>
+        </div>
+        <div class="field-row field-row-check">
+          <label>
+            <input type="checkbox" id="list-mode-checkbox" />
+            List preview (bulk check)
+          </label>
+        </div>
+        <button type="button" id="refresh-btn" class="btn-primary">Load cards</button>
+        <button type="button" id="reset-progress-btn" class="btn-ghost">Reset session progress</button>
+      </div>
+    </details>
+
+    <main class="main-panel">
+      <section class="study panel study-focus" aria-label="Study session">
+        <div class="study-chrome" aria-label="Study controls">
+          <div class="study-meta-row">
+            <p id="study-position" class="study-position">No cards loaded</p>
+            <p id="progress-stats" class="progress-stats muted">0 graded</p>
+          </div>
+          <div class="progress-block" aria-label="Session progress">
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div id="progress-bar-fill" class="progress-fill"></div>
+            </div>
+            <div id="grade-breakdown" class="grade-breakdown" aria-label="Grade counts"></div>
+          </div>
+
+          <div id="grade-panel" class="grade-bar" aria-label="Rate card (1–4)">
+            <button type="button" class="grade-btn grade-again" data-grade="again" disabled>
+              <span class="grade-num">1</span>
+              <span class="grade-name">Again</span>
+            </button>
+            <button type="button" class="grade-btn grade-hard" data-grade="hard" disabled>
+              <span class="grade-num">2</span>
+              <span class="grade-name">Hard</span>
+            </button>
+            <button type="button" class="grade-btn grade-good" data-grade="good" disabled>
+              <span class="grade-num">3</span>
+              <span class="grade-name">Good</span>
+            </button>
+            <button type="button" class="grade-btn grade-easy" data-grade="easy" disabled>
+              <span class="grade-num">4</span>
+              <span class="grade-name">Easy</span>
+            </button>
+          </div>
+
+          <div class="study-nav">
+            <button type="button" id="prev-btn" class="nav-btn" disabled>Prev</button>
+            <button type="button" id="show-answer-btn" class="nav-btn nav-btn-primary">Answer</button>
+            <button type="button" id="next-btn" class="nav-btn" disabled>Next</button>
+          </div>
+        </div>
+
+        <div id="study-card-host" class="study-card-host"></div>
+      </section>
+
+      <details class="extra-panel deck-overview-panel">
+        <summary>Deck overview <span id="hierarchy-total" class="muted"></span></summary>
+        <div id="hierarchy-tree" class="hierarchy-tree muted">Loading…</div>
+      </details>
+
+      <details id="list-preview-section" class="extra-panel preview hidden">
+        <summary>List preview</summary>
+        <div id="card-list" class="card-list"></div>
+      </details>
+    </main>
+  </div>
+
+  <footer class="site-footer muted">
+    <p>Locale overlays: <code>finals-flashcards-csvs/locales/&lt;code&gt;/</code></p>
+    <p><strong>Anki:</strong> <code>./run_build_master_finals_anki.sh</code> → re-import <code>outputs/finals-master.apkg</code></p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
