@@ -1,2 +1,4 @@
+# Kept for reference; Vercel installs from repo-root requirements.txt / pyproject.toml
 fastapi>=0.115.0
 mangum>=0.17.0
+uvicorn>=0.32.0

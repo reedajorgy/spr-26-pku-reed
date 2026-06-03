@@ -47,4 +47,4 @@ agent-transcripts
 **/*.mp4
 **/*.pdf
 
-requirements.txt
+requirements-dev.txt

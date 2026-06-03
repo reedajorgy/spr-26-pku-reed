@@ -1,11 +1,4 @@
-google-generativeai>=0.8.0
-python-dotenv>=1.0.0
-faster-whisper>=1.0.0
-tqdm>=4.66.0
-soundfile>=0.12.1
-zhconv>=1.4.0
-requests>=2.31.0
-pillow>=10.0.0
-genanki>=0.13.0
+# Vercel + local web app (Reed's Finals Flashcards)
 fastapi>=0.115.0
+mangum>=0.17.0
 uvicorn>=0.32.0

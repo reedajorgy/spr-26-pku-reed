@@ -130,3 +130,6 @@ agent-transcripts/
 
 # Vercel local metadata
 .vercel
+run_transcription.sh
+run_flashcards_web.sh
+run_transcription.sh

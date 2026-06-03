@@ -40,7 +40,8 @@ Raw media and private study materials **must remain local** and are never pushed
    - `python3 -m venv .venv`
    - `source .venv/bin/activate`
 2. Install Python dependencies:
-   - `pip install -r requirements.txt`
+   - Web app only: `pip install -r requirements.txt`
+   - Full repo (transcription, Anki, etc.): `pip install -r requirements-dev.txt`
 3. Create the `raw_materials/` directory structure if it does not exist:
    - `raw_materials/audio_lectures/`
    - `raw_materials/textbooks/`
@@ -80,7 +81,7 @@ One import covers **口语 Kouyu** and **精读 Jingdu**, every chapter, vocab /
 
 #### Deploy on Vercel
 
-The web UI is a FastAPI app served from `api/index.py`. Vercel installs only `api/requirements.txt` (FastAPI + Mangum).
+The web UI is a FastAPI app served from `api/index.py`. Vercel installs dependencies from root `requirements.txt` and `pyproject.toml` (FastAPI + Mangum + uvicorn).
 
 **Tracked for Git / Vercel (the app):**
 
@@ -100,7 +101,7 @@ The web UI is a FastAPI app served from `api/index.py`. Vercel installs only `ap
 **Pre-deploy check:**
 
 ```bash
-pip install -r api/requirements.txt
+pip install -r requirements.txt
 export PYTHONPATH=.
 python -m unittest tests.test_vercel_deploy_ready -v
 python -m uvicorn apps.flashcards.web.app:app --reload --port 8765

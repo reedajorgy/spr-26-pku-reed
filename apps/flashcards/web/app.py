@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from apps.flashcards.hierarchy import build_hierarchy_summary, deck_keys_for_filters
@@ -203,6 +203,12 @@ def api_chapters(
 @app.get("/")
 def index() -> FileResponse:
     return FileResponse(STATIC_DIR / "index.html")
+
+
+@app.get("/favicon.ico", include_in_schema=False)
+@app.get("/favicon.png", include_in_schema=False)
+def favicon() -> Response:
+    return Response(status_code=204)
 
 
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
