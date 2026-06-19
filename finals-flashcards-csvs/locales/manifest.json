@@ -12,6 +12,7 @@
     "fr": "Français"
   },
   "master_deck_name": "PKU Spring 2026 Finals",
+  "anki_master_courses": ["kouyu", "jingdu"],
   "courses": {
     "kouyu": {
       "label": "Kouyu",
@@ -26,6 +27,11 @@
         "jingdu-qimo-grammar",
         "jingdu-qimo-differences"
       ]
+    },
+    "xuanxiu": {
+      "label": "Xuanxiu Ke",
+      "label_zh": "选修课",
+      "deck_keys": ["baokan-vocab", "yingshi-vocab"]
     }
   },
   "aspects": {
@@ -33,7 +39,9 @@
     "kouyu-qimo-grammar": "Grammar",
     "jingdu-qimo-vocab": "Vocab",
     "jingdu-qimo-grammar": "Grammar",
-    "jingdu-qimo-differences": "Word_Differences"
+    "jingdu-qimo-differences": "Word_Differences",
+    "baokan-vocab": "Vocab",
+    "yingshi-vocab": "Vocab"
   },
   "decks": {
     "kouyu-qimo-vocab": {
@@ -90,6 +98,28 @@
       },
       "overlay_fields": ["nuance", "grammar_notes", "example_1_en", "example_2_en"],
       "anki_vocab": false
+    },
+    "baokan-vocab": {
+      "master_file": "baokan.csv",
+      "join_keys": ["Chapter", "hanzi"],
+      "master_fields": {
+        "meaning": "英文意义",
+        "example_en": "example_sentence_en",
+        "usage_note": "usage_note"
+      },
+      "overlay_fields": ["meaning", "example_en", "usage_note"],
+      "anki_vocab": true
+    },
+    "yingshi-vocab": {
+      "master_file": "yingshi.csv",
+      "join_keys": ["Chapter", "hanzi"],
+      "master_fields": {
+        "meaning": "英文意义",
+        "example_en": "example_sentence_en",
+        "usage_note": "usage_note"
+      },
+      "overlay_fields": ["meaning", "example_en", "usage_note"],
+      "anki_vocab": true
     }
   }
 }

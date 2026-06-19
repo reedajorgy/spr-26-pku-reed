@@ -24,8 +24,14 @@ from apps.flashcards.paths import FINALS_DIR, MANIFEST_PATH
 from apps.flashcards.study_prefs import study_prefs_api_payload
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
+CARD_STUDY_CSS_PATH = Path(__file__).resolve().parents[1] / "static" / "card_study.css"
 
 app = FastAPI(title="Reed's Finals Flashcards", version="1.0.0")
+
+
+@app.get("/static/card_study.css", include_in_schema=False)
+def shared_card_study_css() -> FileResponse:
+    return FileResponse(CARD_STUDY_CSS_PATH, media_type="text/css")
 
 
 @app.get("/api/study-prefs")
@@ -202,19 +208,8 @@ def api_chapters(
 
 @app.get("/api/deploy-check")
 def api_deploy_check() -> dict[str, Any]:
-    """Runtime diagnostics for Vercel/local deploy verification."""
+    """Lightweight health check for Vercel/local deploy verification."""
     import sys
-
-    from apps.flashcards.web.deploy_debug import DEPLOY_DIAGNOSTICS, agent_log
-
-    # region agent log
-    agent_log(
-        "H5",
-        "app.py:deploy-check",
-        "deploy-check requested",
-        {},
-    )
-    # endregion
 
     overlay_locales = [
         code
@@ -239,7 +234,6 @@ def api_deploy_check() -> dict[str, Any]:
         "deck_count": len(get_deck_specs()),
         "overlay_csv_count": overlay_count,
         "python_version": sys.version,
-        "import_diagnostics": dict(DEPLOY_DIAGNOSTICS),
     }
     try:
         import fastapi as fastapi_module

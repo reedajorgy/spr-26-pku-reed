@@ -13,53 +13,14 @@ from apps.flashcards.merge import merge_deck_rows, merge_vocab_for_anki
 from apps.flashcards.paths import FINALS_DIR
 
 from apps.flashcards.study_prefs import (
-    STUDY_LAYOUT_CSS,
+    bootstrap_script_tag,
     locale_selector_html,
+    load_card_study_css,
     reveal_toolbar_button,
     study_script_tag,
 )
 
-CARD_CSS = (
-    """
-.card {
-  font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
-  font-size: 18px;
-  color: #1a1a1a;
-  background-color: #fafafa;
-  text-align: left;
-  line-height: 1.5;
-}
-.chapter-label {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 8px;
-}
-.prompt {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 12px;
-}
-.hanzi-text { font-size: 42px; font-weight: 600; line-height: 1.2; }
-.pinyin-text { font-size: 26px; color: #333; }
-.translation-text { font-size: 20px; font-weight: 500; }
-.mandarin-def { font-size: 16px; color: #555; margin-top: 6px; }
-.meta-footer {
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid #ddd;
-  font-size: 14px;
-  color: #444;
-}
-.badges { font-size: 13px; color: #555; margin-bottom: 8px; }
-.meta-line { margin: 6px 0; }
-.meta-label { font-weight: 600; color: #333; }
-.production-front { font-size: 22px; font-weight: 500; margin: 16px 0; }
-.grammar-title { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
-.body-text { font-size: 16px; margin: 8px 0; }
-.pair-label { font-size: 16px; color: #666; font-weight: 400; }
-"""
-    + STUDY_LAYOUT_CSS
-)
+CARD_CSS = load_card_study_css()
 
 
 def stable_id(seed: str) -> int:
@@ -74,9 +35,31 @@ def parse_chapter_number(chapter_label: str) -> str:
     return match.group(1)
 
 
+def chapter_slug_from_label(chapter_label: str) -> str:
+    """Turn 'Chapter 6' or 'Movie 4' into a stable Anki subdeck segment."""
+    label = chapter_label.strip()
+    movie_match = re.match(r"movie\s+(\d+)$", label, re.IGNORECASE)
+    if movie_match:
+        return f"Movie_{movie_match.group(1)}"
+    chapter_match = re.match(r"chapter\s+(\d+)$", label, re.IGNORECASE)
+    if chapter_match:
+        return f"Chapter_{chapter_match.group(1)}"
+    slug = re.sub(r"\s+", "_", label)
+    return slug or "Unknown"
+
+
+def deck_subcourse_label(deck_key: str) -> str | None:
+    """Optional middle segment for elective decks nested under one course."""
+    mapping = {
+        "baokan-vocab": "Baokan",
+        "yingshi-vocab": "Yingshi",
+    }
+    return mapping.get(deck_key)
+
+
 def chapter_to_subdeck_name(chapter_label: str, deck_name: str) -> str:
-    chapter_number = parse_chapter_number(chapter_label)
-    return f"{deck_name}::Chapter_{chapter_number}"
+    chapter_slug = chapter_slug_from_label(chapter_label)
+    return f"{deck_name}::{chapter_slug}"
 
 
 def expand_collocations(collocations: str, hanzi: str) -> str:
@@ -159,8 +142,12 @@ def build_vocab_model(locale: str) -> genanki.Model:
     toggle_back = f"""
 {{{{FrontSide}}}}
 <hr class="answer-divider"/>
+<div class="answer-panel">
+  <div class="hanzi-text text-zh">{{{{Hanzi}}}}</div>
+  <div class="pinyin-text text-latin">{{{{Pinyin}}}}</div>
+</div>
 <script>spr26RevealOnBack();</script>
-{study_script}
+{bootstrap_script_tag()}
 """
     production_front = f"""
 <div class="card-shell">

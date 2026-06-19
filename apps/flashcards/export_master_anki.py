@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Build the master finals Anki package: all courses, chapters, aspects, and locales.
+Build the master finals Anki package: Kouyu + Jingdu only (excludes 选修课).
 
-Writes outputs/finals-master.apkg by default (683 notes across Vocab, Grammar,
-and Word_Differences subdecks under Kouyu and Jingdu).
+Writes outputs/finals-master.apkg by default. For Baokan + Yingshi elective vocab,
+use export_xuanxiu_anki.py instead.
 
 Example:
   PYTHONPATH=. python apps/flashcards/export_master_anki.py

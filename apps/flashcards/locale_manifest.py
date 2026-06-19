@@ -123,6 +123,15 @@ def master_deck_name(manifest: dict[str, Any] | None = None) -> str:
     return data.get("master_deck_name", "PKU Spring 2026 Finals")
 
 
+def anki_master_course_keys(manifest: dict[str, Any] | None = None) -> list[str]:
+    """Courses included in export_master_anki / finals-master.apkg (excludes electives)."""
+    data = manifest or load_manifest()
+    configured = data.get("anki_master_courses")
+    if configured:
+        return list(configured)
+    return [key for key in get_course_specs(data) if key != "xuanxiu"]
+
+
 def multilocale_field_name(base: str, locale: str) -> str:
     """Anki field name, e.g. Meaning_en, UseCase_ru."""
     normalized = normalize_locale(locale)

@@ -56,7 +56,7 @@ PYTHONPATH=. python apps/flashcards/validate_locales.py --require-filled
 # Open http://127.0.0.1:8765
 ```
 
-Filters and mother language persist in the browser (`spr26_study_settings`). Study mode uses the same reveal buttons as Anki (汉字 / 拼音 / Gloss / 例句). Re-import the `.apkg` after template changes (see below).
+Filters and mother language persist in the browser (`spr26_study_settings`). Study mode uses the same reveal buttons as Anki (汉字 / 拼音 / Definition / 例句). Re-import the `.apkg` after template changes (see below).
 
 ## Anki export
 
@@ -64,8 +64,9 @@ Filters and mother language persist in the browser (`spr26_study_settings`). Stu
 # Master deck (all courses, chapters, aspects, locales in one .apkg)
 ./run_build_master_finals_anki.sh
 # -> outputs/finals-master.apkg
-# Re-import in Anki after template/CSS changes. Mother language is under ⚙ Study settings
-# (saved in localStorage). Example sentences stay hidden until 例句 or Show Answer.
+# Re-import in Anki after template/CSS changes. Use Study settings on-card for mother
+# language and auto-reveal (persisted across cards; localStorage + Anki persistence shim).
+# Example sentences stay hidden until 例句 or Show Answer.
 
 # Kouyu vocab only (legacy, single locale)
 ./run_build_kouyu_anki.sh --locale fr --output outputs/kouyu-qimo-vocab-fr.apkg

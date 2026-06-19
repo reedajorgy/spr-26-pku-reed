@@ -5,7 +5,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from apps.flashcards.anki_master import aspect_subdeck_name, summarize_master_package
+from apps.flashcards.anki_master import (
+    XUANXIU_ROOT_DECK_NAME,
+    aspect_subdeck_name,
+    summarize_master_package,
+    summarize_xuanxiu_package,
+)
 from apps.flashcards.merge import merge_deck_rows_multilocale, merge_vocab_for_anki_multilocale
 from apps.flashcards.paths import FINALS_DIR
 
@@ -100,8 +105,41 @@ class FlashcardMultilocaleTests(unittest.TestCase):
     def test_master_summary_counts(self) -> None:
         note_count, card_count, subdeck_counts = summarize_master_package(finals_dir=FINALS_DIR)
         self.assertGreater(note_count, 600)
+        self.assertLess(note_count, 750)
         self.assertGreater(card_count, note_count)
         self.assertIn("PKU Spring 2026 Finals::Kouyu::Chapter_7::Vocab", subdeck_counts)
+        self.assertFalse(any("Baokan" in name for name in subdeck_counts))
+        self.assertFalse(any("Yingshi" in name for name in subdeck_counts))
+
+    def test_xuanxiu_subdeck_paths(self) -> None:
+        baokan_path = aspect_subdeck_name(
+            XUANXIU_ROOT_DECK_NAME,
+            "Xuanxiu Ke",
+            "Chapter 6",
+            "Vocab",
+            deck_key="baokan-vocab",
+        )
+        yingshi_path = aspect_subdeck_name(
+            XUANXIU_ROOT_DECK_NAME,
+            "Xuanxiu Ke",
+            "Movie 4",
+            "Vocab",
+            deck_key="yingshi-vocab",
+        )
+        self.assertEqual(
+            baokan_path,
+            f"{XUANXIU_ROOT_DECK_NAME}::Xuanxiu Ke::Baokan::Chapter_6::Vocab",
+        )
+        self.assertEqual(
+            yingshi_path,
+            f"{XUANXIU_ROOT_DECK_NAME}::Xuanxiu Ke::Yingshi::Movie_4::Vocab",
+        )
+
+    def test_xuanxiu_summary_counts(self) -> None:
+        note_count, card_count, subdeck_counts = summarize_xuanxiu_package(finals_dir=FINALS_DIR)
+        self.assertEqual(note_count, 400)
+        self.assertEqual(card_count, 800)
+        self.assertEqual(len(subdeck_counts), 10)
 
 
 if __name__ == "__main__":

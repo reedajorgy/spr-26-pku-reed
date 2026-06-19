@@ -1,0 +1,281 @@
+/* Shared study-card styles for Anki templates and the web app. */
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-web/style.css");
+
+:root {
+  --border: #e2e8f0;
+  --muted: #5c6773;
+  --accent-soft: #dbeafe;
+  --font-chinese: "LXGW WenKai", "Kaiti SC", "STKaiti", "KaiTi", "楷体", "AR PL UKai CN", serif;
+  --font-english: "Futura", "Futura PT", "Century Gothic", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Noto Sans JP", sans-serif;
+  --font-ko: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-ru: "Segoe UI", "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+  --font-hi: "Kohinoor Devanagari", "Noto Sans Devanagari", "Mangal", sans-serif;
+  --font-vi: system-ui, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.card {
+  font-family: var(--font-chinese);
+  font-size: 18px;
+  color: #1c2330;
+  background-color: #f4f6f8;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.card-shell {
+  max-width: 42rem;
+  margin: 0 auto;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.chapter-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.prompt {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.settings-panel {
+  margin: 0 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.settings-panel summary {
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #475569;
+  list-style: none;
+  user-select: none;
+}
+
+.settings-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.settings-panel[open] summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-panel-body {
+  padding: 10px 12px 12px;
+}
+
+.locale-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.locale-row label {
+  font-size: 13px;
+  color: #555;
+}
+
+.settings-checkbox-row {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.settings-checkbox-row label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.spr26-locale-select {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  min-width: 10rem;
+}
+
+.locale-block {
+  display: none;
+}
+
+.locale-block.active {
+  display: block;
+}
+
+.card-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 12px;
+}
+
+.toggle-btn {
+  font-size: 13px;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  min-height: 2.5rem;
+}
+
+.toggle-btn:hover {
+  background: #f1f5f9;
+}
+
+.toggle-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.toggle-btn.is-revealed {
+  background: var(--accent-soft);
+  border-color: #93c5fd;
+  color: #1e40af;
+}
+
+.reveal-block,
+.example-block {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.card-body {
+  margin-top: 4px;
+}
+
+.text-zh,
+.hanzi-text,
+.mandarin-def,
+.card-shell .text-zh {
+  font-family: var(--font-chinese);
+}
+
+.text-latin,
+.pinyin-text,
+.card-shell.font-latin .text-mother,
+.card-shell.font-latin .text-latin {
+  font-family: var(--font-english);
+}
+
+.card-shell.font-script-ja .text-mother {
+  font-family: var(--font-ja);
+}
+
+.card-shell.font-script-ko .text-mother {
+  font-family: var(--font-ko);
+}
+
+.card-shell.font-script-ru .text-mother {
+  font-family: var(--font-ru);
+}
+
+.card-shell.font-script-hi .text-mother {
+  font-family: var(--font-hi);
+}
+
+.card-shell.font-script-vi .text-mother {
+  font-family: var(--font-vi);
+}
+
+.hanzi-text {
+  font-size: clamp(1.75rem, 8vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.pinyin-text {
+  font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+  color: #334155;
+  letter-spacing: 0.02em;
+}
+
+.translation-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mandarin-def {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.production-front {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.grammar-title {
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.body-text {
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.pair-label {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 400;
+}
+
+.meta-footer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.meta-line {
+  margin: 4px 0;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.badges {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.answer-divider {
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.answer-panel {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #cbd5e1;
+}

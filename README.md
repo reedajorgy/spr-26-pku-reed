@@ -55,7 +55,7 @@ Master decks are in `finals-flashcards-csvs/*.csv`. Mother-tongue glosses live i
 
 ### Master Anki deck (recommended)
 
-One import covers **口语 Kouyu** and **精读 Jingdu**, every chapter, vocab / grammar / word-differences, and **all mother languages** with an in-card dropdown (preference saved via `localStorage` on desktop Anki).
+One import covers **口语 Kouyu** and **精读 Jingdu**, every chapter, vocab / grammar / word-differences, and **all mother languages** with an in-card **Study settings** panel (mother language + auto-reveal; saved across cards via `localStorage`, with a fallback on clients that block it).
 
 ```bash
 ./run_build_master_finals_anki.sh
@@ -71,7 +71,8 @@ One import covers **口语 Kouyu** and **精读 Jingdu**, every chapter, vocab /
 
 - Cram one chapter: enable only e.g. `Jingdu::Chapter_5` and its Vocab / Grammar subdecks.
 - One class only: suspend everything outside `::Kouyu::` or `::Jingdu::`.
-- Mother language: use the card’s **Mother language** menu once; desktop Anki remembers it. On some mobile clients the choice may not persist between sessions.
+- Mother language: open **Study settings** on one card, pick your language, and study on—settings apply to every following card in the session (re-import the `.apkg` after template/CSS updates).
+- iOS Anki may not keep preferences between app restarts; desktop and Android are the most reliable.
 
 ### Web study app (Reed's Finals Flashcards)
 
@@ -116,6 +117,7 @@ If you previously committed ignored paths, stop tracking them once:
 
 - **Kouyu vocab**: `./run_build_kouyu_anki.sh --locale fr`
 - **Any deck, one locale**: `./run_build_finals_anki.sh --deck jingdu-qimo-vocab --locale ru`
+- **Elective vocab only (报刊 + 影视, separate from master)**: `./run_build_xuanxiu_anki.sh` → `outputs/xuanxiu-ke.apkg`
 
 See [finals-flashcards-csvs/locales/README.md](finals-flashcards-csvs/locales/README.md) for overlay layout, validation, and regeneration commands.
 
